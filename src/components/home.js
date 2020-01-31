@@ -9,7 +9,7 @@ export default class Home extends Component {
     return (
       <div className='app'>
         <div className="container">
-          <div className='logo'>
+          <div className='logo-home'>
 
             <Logo />
             

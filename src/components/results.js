@@ -6,7 +6,9 @@ class Results extends Component {
         return (
             <div>
                 <h1>Results</h1>
-                <Logo />
+                <div className='logo-results'>
+                    <Logo />
+                </div>
             </div>
         );
     }

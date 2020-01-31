@@ -9,15 +9,21 @@ export default class Home extends Component {
     return (
       <div className='app'>
         <div className="container">
-          <Logo />
-          <SearchBar />
-          <RecentPosts />
+          <div className='logo'>
+
+            <Logo />
+            
+          </div>
 
           <div className="search">
+
+            <SearchBar />
 
           </div>
 
           <div className="recent">
+
+            <RecentPosts />
 
           </div>
         </div>

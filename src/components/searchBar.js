@@ -29,4 +29,4 @@ SearchBar = reduxForm({
     form: 'searchBar'
 })(SearchBar);
 
-export default SearchBar
+export default SearchBar;

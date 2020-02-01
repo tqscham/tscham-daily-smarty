@@ -42,11 +42,12 @@ class Post extends Component {
         } else if (this.props.type === 'result'){
             return (
                 <li className='result-post'>
-                    <div className='result-post-topics'>
-                        {this.renderTopics()}
+                <div className='result-post-title'>
+                        {this.props.title}
                     </div>
 
-                    <div className='result-post-title'>
+                    <div className='result-post-topics'>
+                        {this.renderTopics()}
 
                     </div>
 

@@ -22,25 +22,23 @@ class Home extends Component {
 
 
     return (
-      <div className='app'>
-        <div className="container">
-          <div className='logo-home'>
+      <div className='home'>
+        <div className='logo-home'>
 
-            <Logo />
-            
-          </div>
+          <Logo />
+          
+        </div>
 
-          <div className="search">
+        <div className="search">
 
-            <SearchBar onSubmit={(query) => this.handleSearchBarSubmit(query)} />
+          <SearchBar onSubmit={(query) => this.handleSearchBarSubmit(query)} />
 
-          </div>
+        </div>
 
-          <div className="recent">
+        <div className="recent">
 
-            <RecentPosts />
+          <RecentPosts />
 
-          </div>
         </div>
       </div>
     );

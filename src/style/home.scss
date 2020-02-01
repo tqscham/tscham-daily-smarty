@@ -1,10 +1,59 @@
-.logo-home {
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.home {
     display: grid;
-    img {
-        width: 105px;
-        height: 105px;
+    align-content: space-evenly;
+    justify-items: center;
+    height: 100vh;
+    background-color: green;
+
+    .logo-home {
+        display: grid;
+        background-color: blue;
+
+        img {
+            width: 105px;
+            height: 105px;
+        }
+    }
+
+    .search {
+        display: grid;
+        align-content: center;
+        justify-items: center;
+        background-color: darkcyan;
+
+        input {
+            width: 400px;
+            height: 40px;
+            border-style: none;
+            border-color: darksalmon;
+            transition: .5s ease-in-out;
+            
+            &:focus {
+                border-color: darkblue;
+            }
+        }
+
+    }
+
+    .recent {
+        width: 600px;
+        height: 120px;
+        display: grid;
+        align-content: center;
+        justify-items: center;
+
+        .recent-posts-wrapper {
+            background-color: darkred;
+        }
+
     }
 }
+
+
 
 .post-topic{
     margin: 0 4px;

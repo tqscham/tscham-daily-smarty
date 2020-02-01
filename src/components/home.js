@@ -29,7 +29,7 @@ class Home extends Component {
           
         </div>
 
-        <div className="search">
+        <div className="search-home">
 
           <SearchBar onSubmit={(query) => this.handleSearchBarSubmit(query)} />
 

@@ -1,6 +1,7 @@
 @import './variables.scss';
 @import './home.scss';
 @import './search-bar.scss';
+@import './recent.scss';
 
 //font-family: 'Lato', sans-serif;
 
@@ -10,4 +11,10 @@ a {
     &:hover {
         cursor: pointer;
     }
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 }

@@ -1,1 +1,9 @@
 @import './home.scss';
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        cursor: pointer;
+    }
+}

@@ -2,16 +2,21 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+.app-wrapper {
+    display: grid;
+    justify-content: center;
+}
+
 .home {
     display: grid;
     align-content: space-evenly;
     justify-items: center;
     height: 100vh;
-    background-color: green;
+    width: 66vw;
+    grid-template-rows: 1fr 2fr 1fr;
 
     .logo-home {
         display: grid;
-        background-color: blue;
 
         img {
             width: 105px;
@@ -19,25 +24,6 @@ body {
         }
     }
 
-    .search {
-        display: grid;
-        align-content: center;
-        justify-items: center;
-        background-color: darkcyan;
-
-        input {
-            width: 400px;
-            height: 40px;
-            border-style: none;
-            border-color: darksalmon;
-            transition: .5s ease-in-out;
-            
-            &:focus {
-                border-color: darkblue;
-            }
-        }
-
-    }
 
     .recent {
         width: 600px;
@@ -45,10 +31,6 @@ body {
         display: grid;
         align-content: center;
         justify-items: center;
-
-        .recent-posts-wrapper {
-            background-color: darkred;
-        }
 
     }
 }

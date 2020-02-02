@@ -1,17 +1,42 @@
 .results {
     display: grid;
-    align-content: space-evenly;
-    justify-items: center;
+    //align-content: space-evenly;
+    //justify-items: center;
+    //grid-template-rows: 1fr 1fr 1fr;
     height: 100vh;
-    width: 66vw;
-    grid-template-rows: 1fr 1fr 1fr;
+    width: 100%;
+    margin-top: 52px;
+    grid-row-gap: 44px;
 
     .logo {
         display: grid;
+        align-content: center;
+        justify-content: center;
+    }
 
-        img {
-            width: 55px;
-            height: 55px;
+    .result-post {
+        display: grid;
+        justify-content: stretch;
+        grid-row-gap: 22px;
+
+        .result-post-topics > *  {
+            color: $blue-one;
+            font-size: 18px;
+            line-height: 17px;
+            font-weight: normal;
+
+        }
+
+        .result-post-title a {
+            color: $gray-one;
+            font-size: 24px;
+            line-height: 22px;
+
+        }
+
+        .result-post-links {
+
         }
     }
+
 }

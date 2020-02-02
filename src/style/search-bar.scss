@@ -7,9 +7,7 @@
         box-shadow: 2px 3px 28px 1px rgba(0,0,0,0.2);
         border: 0px solid transparent;
         border-radius: 5px;
-        height: 98px;
         width: 55vw;
-        font-size: 40px;
         transition: all .2s ease-in-out;
 
         &::placeholder {
@@ -28,5 +26,16 @@
         text-align: right;
         font-size: 14px;
         color: $gray-one;
+    }
+
+    .search-bar-home {
+
+    }
+
+}
+.search-bar-results {
+    input {
+        font-size: 22px;
+        height: 36px;
     }
 }

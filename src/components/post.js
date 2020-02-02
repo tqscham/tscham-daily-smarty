@@ -15,16 +15,16 @@ class Post extends Component {
         var link = str.substring(n + 1, str.length);
 
         if ((n + 1) === str.length) {
-            res = str.slice(0, n);
-            n = res.lastIndexOf('/');
-            rlink = str.substring(n + 1, str.length - 1);
+            link = str.slice(0, n);
+            n = link.lastIndexOf('/');
+            link = str.substring(n + 1, str.length - 1);
         }
 
         if(link.includes('.html')) {
             link = link.substring(0, link.length - 5);
         }
 
-        if(res.includes('.htm')) {
+        if(link.includes('.htm')) {
             link = link.substring(0, link.length - 4);
         }
 
@@ -44,6 +44,10 @@ class Post extends Component {
                 </div>
             )
         })
+
+        if (links==0) {
+            return <div className="no-content">No Post Links</div>
+        }
         return links
     }
 

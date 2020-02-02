@@ -34,8 +34,11 @@
 
 }
 .search-bar-results {
+    display: grid;
     input {
         font-size: 22px;
         height: 36px;
+        justify-items: center;
+        width: 100%;
     }
 }

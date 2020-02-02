@@ -10,6 +10,18 @@ class Post extends Component {
         }
     }
 
+    getNameForPostLink (str) {
+        var n = str.lastIndexOf('/');
+        var res = str.substring(n + 1, str.length);
+
+        if ((n + 1) === str.length) {
+            res = str.slice(0, n);
+            n = res.lastIndexOf('/');
+            res = str.substring(n + 1, str.length - 1);
+        }
+        return res;
+    }
+
     renderLinks() {
         let links = this.props.post_links.map((link, index) => {
             return (
@@ -18,7 +30,7 @@ class Post extends Component {
                     </div>
 
                     <div className='post-link-link'>
-                        <a href={link.link_url}>Userful Link #{index+1}</a>
+                    <a href={link.link_url}>{this.getNameForPostLink(link.link_url)}</a>
                     </div>
                 </div>
             )

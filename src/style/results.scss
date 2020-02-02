@@ -1,0 +1,17 @@
+.results {
+    display: grid;
+    align-content: space-evenly;
+    justify-items: center;
+    height: 100vh;
+    width: 66vw;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    .logo {
+        display: grid;
+
+        img {
+            width: 55px;
+            height: 55px;
+        }
+    }
+}
